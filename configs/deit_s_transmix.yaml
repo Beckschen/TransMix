@@ -1,0 +1,23 @@
+model: deit_small_patch16_224_return_attn
+warmup_lr: 1e-6
+img_size: 224
+decay_epochs: 30
+opt: adamw
+num_classes: 1000
+mixup: 0.8
+cutmix: 1.0
+drop_path: 0.1
+dist_bn: ""
+model_ema: True
+aa: rand-m9-mstd0.5-inc1
+pin_mem: False
+model_ema_decay: 0.99996
+no_prefetcher: True
+transmix: True  # enable transmix
+mixup-switch-prob: 0.8
+min_lr: 1e-5
+lr: 1e-3
+weight_decay: 3e-2
+warmup_epochs: 20
+workers: 8
+total_batch_size: 1024
