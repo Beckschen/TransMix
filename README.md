@@ -23,7 +23,7 @@ git clone https://github.com/Beckschen/TransMix.git
 
 Then, you need to install the required packages including: [Pytorch](https://pytorch.org/) version 1.7.1,
 [torchvision](https://pytorch.org/vision/stable/index.html) version 0.8.2,
-[Timm](https://github.com/rwightman/pytorch-image-models) version 0.5.0
+[Timm](https://github.com/rwightman/pytorch-image-models) version 0.5.4
 and ```pyyaml```. To install all these packages, simply run
 ```
 pip3 install -r requirements.txt
