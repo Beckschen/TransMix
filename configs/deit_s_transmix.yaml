@@ -20,4 +20,4 @@ lr: 1e-3
 weight_decay: 3e-2
 warmup_epochs: 20
 workers: 8
-total_batch_size: 1024
+total_batch_size: 256
