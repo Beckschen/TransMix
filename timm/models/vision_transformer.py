@@ -599,6 +599,16 @@ def deit_small_patch16_224_return_attn(pretrained=False, **kwargs):
     return model
 
 @register_model
+def deit_base_patch16_224_return_attn(pretrained=False, **kwargs):
+    """ an extra output for the class attention
+    DeiT base model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
+    ImageNet-1k weights from https://github.com/facebookresearch/deit.
+    """
+    model_kwargs = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12, return_attn=True, **kwargs)
+    model = _create_vision_transformer('deit_base_patch16_224', pretrained=pretrained, **model_kwargs)
+    return model
+
+@register_model
 def vit_tiny_patch16_224(pretrained=False, **kwargs):
     """ ViT-Tiny (Vit-Ti/16)
     """
