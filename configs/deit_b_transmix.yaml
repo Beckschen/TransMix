@@ -1,4 +1,4 @@
-model: "deit_base_patch16_224"
+model: "deit_base_patch16_224_return_attn"
 
 img_size: 224
 decay_epochs: 30
